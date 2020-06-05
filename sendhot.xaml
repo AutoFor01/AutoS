@@ -1,0 +1,80 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="sendhot" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1143.2,654.4" sap2010:WorkflowViewState.IdRef="sendhot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="sendhot" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="画像をクリック 'chrome.exe Tinder'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:ClickImage.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:ClickImage.CursorPosition>
+      <ui:ClickImage.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+      </ui:ClickImage.Image>
+      <ui:ClickImage.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cbefc5a9-70e4-4015-876a-152a74fa6dce" Selector="&lt;html app='chrome.exe' title='Tinder | 世界最大級のライフスタイルアプリ' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:ClickImage.Target>
+    </ui:ClickImage>
+  </Sequence>
+</Activity>
